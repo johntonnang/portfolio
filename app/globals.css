@@ -2,26 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+@layer utilities {
+.link::after {
+  content: '';
+  height: 9px;
+  width: 0;
+  position: absolute;
+  bottom: -6px;
+  background-color: #f3f3f3;
+  left: 0;
+  transition: width 0.3s ease;
+  border-radius: 999px;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.link-medium::after {
+  content: '';
+  height: 6px;
+  width: 0;
+  position: absolute;
+  bottom: -4px;
+  background-color: #f3f3f3;
+  left: 0;
+  transition: width 0.3s ease;
+  border-radius: 999px;
+}
+
+.link-medium:hover::after {
+  width: 100%;
+}
+
+.link-small::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  position: absolute;
+  bottom: -2px;
+  background-color: #f3f3f3;
+  left: 0;
+  transition: width 0.3s ease;
+  border-radius: 999px;
+}
+
+.link-small:hover::after {
+  width: 100%;
+}
+}
+
+.rotate-left {
+  transform: rotate(45deg) translate(2.8px, -5px);
+  transform-origin: left;
+}
+
+.rotate-right {
+  transform: rotate(-45deg) translate(2.8px, 5px);
+  transform-origin: left;
+}
+
+.dot::after {
+  content: '.';
+  color: #ed6829;
 }
