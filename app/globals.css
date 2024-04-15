@@ -8,11 +8,19 @@
   padding: 0;
 }
 
-body {
-  @apply h-screen w-screen overflow-hidden flex justify-center items-center
+*::-webkit-scrollbar {
+  display: none;
 }
 
 main {
+  @apply h-screen w-screen overflow-hidden flex justify-center items-center
+}
+
+/* main {
+  @apply max-w-[1440px]
+} */
+
+section {
   @apply max-w-[1440px]
 }
 
