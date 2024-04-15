@@ -26,7 +26,7 @@ const ProjectsPage = () => {
           whileInView="visible"
           variants={fadeAnimation}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 1 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
           className="flex h-screen flex-col gap-4 overflow-scroll p-6 pb-48 md:p-16 lg:gap-14"
         >
           <motion.h1
@@ -34,7 +34,7 @@ const ProjectsPage = () => {
             whileInView="visible"
             variants={fadeAnimation}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 1.5 }}
+            transition={{ duration: 0.5, delay: 1 }}
             className="text-6xl font-bold leading-tight tracking-tight text-orange-dark md:text-8xl xl:text-9xl"
           >
             Projects
@@ -43,9 +43,9 @@ const ProjectsPage = () => {
               animate="visible"
               exit="exit"
               variants={fadeInText}
-              transition={{ delay: 2 }}
+              transition={{ delay: 1.5 }}
               className="dot"
-            ></motion.span>
+            />
           </motion.h1>
           <div className="flex flex-col gap-4 lg:grid lg:grid-cols-2 lg:gap-14">
             {projectsData &&

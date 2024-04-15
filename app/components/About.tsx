@@ -26,7 +26,7 @@ const About: React.FC<AboutProps> = ({ data }) => {
         initial="hidden"
         animate="visible"
         variants={fadeAnimation}
-        transition={{ duration: 0.5, delay: 1 }}
+        transition={{ duration: 0.5, delay: 0.8 }}
         className="pointer-events-none relative mt-6 flex h-screen snap-start flex-col overflow-hidden px-6 after:mb-6 after:h-1 after:w-full after:rounded-full after:bg-orange md:my-12 md:px-12 md:after:mb-12 lg:px-16"
       >
         <div className="mt-6 flex h-full w-full flex-col gap-6 md:mt-12">
@@ -55,7 +55,7 @@ const About: React.FC<AboutProps> = ({ data }) => {
                 variants={fadeInText}
                 transition={{ delay: 2.5 }}
                 className="dot"
-              ></motion.span>
+              />
             </motion.h1>
             <motion.div
               initial="hidden"
@@ -102,7 +102,7 @@ const About: React.FC<AboutProps> = ({ data }) => {
               variants={fadeInText}
               transition={{ delay: 2.5 }}
               className="dot"
-            ></motion.span>
+            />
           </motion.h2>
           <motion.p
             initial="hidden"
@@ -128,7 +128,7 @@ const About: React.FC<AboutProps> = ({ data }) => {
         whileInView="visible"
         variants={fadeAnimation}
         viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 1 }}
+        transition={{ duration: 0.5, delay: 0.8 }}
         className="pointer-events-none relative mt-6 flex h-screen snap-start flex-col overflow-hidden px-6 after:mb-6 after:h-1 after:w-full after:rounded-full after:bg-orange md:my-12 md:px-12 md:after:mb-12 lg:px-16"
       >
         <div className="mt-6 flex h-full w-full flex-col gap-6 md:mt-12">

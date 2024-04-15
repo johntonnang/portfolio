@@ -23,7 +23,7 @@ const Projects: React.FC<ProjectsProps> = ({ data }) => {
       initial="hidden"
       animate="visible"
       variants={fadeAnimation}
-      transition={{ duration: 0.5, delay: 2.5 }}
+      transition={{ duration: 0.5, delay: 2 }}
       className="h-full w-full items-center"
     >
       <div

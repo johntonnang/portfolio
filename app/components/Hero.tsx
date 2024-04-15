@@ -23,7 +23,7 @@ const Hero: React.FC<HeroProps> = ({ data }) => {
       initial="hidden"
       animate="visible"
       variants={fadeAnimation}
-      transition={{ duration: 0.5, delay: 0.5 }}
+      transition={{ duration: 0.5, delay: 0.8 }}
       className="pointer-events-none relative flex h-screen snap-start flex-col overflow-x-hidden px-6 after:mb-6 after:h-1 after:w-full after:rounded-full after:bg-orange md:px-12 md:after:mb-12 lg:px-16"
     >
       <div className="mt-6 flex h-full w-full flex-col gap-2 md:mt-12 md:flex-row md:gap-6">
@@ -52,7 +52,7 @@ const Hero: React.FC<HeroProps> = ({ data }) => {
               variants={fadeInText}
               transition={{ delay: 2.5 }}
               className="dot"
-            ></motion.span>
+            />
           </motion.h1>
           <motion.h2 className="text-xl font-bold leading-tight tracking-tight text-orange-dark md:text-2xl lg:text-4xl">
             {description.map((word, i) => (
@@ -78,7 +78,7 @@ const Hero: React.FC<HeroProps> = ({ data }) => {
               variants={fadeInText}
               transition={{ delay: 2.5 }}
               className="dot"
-            ></motion.span>
+            />
           </motion.h2>
         </div>
         <motion.div

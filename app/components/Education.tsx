@@ -21,7 +21,7 @@ const Education: React.FC<EducationProps> = ({ educations }) => {
       whileInView="visible"
       variants={fadeAnimation}
       viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: 1 }}
+      transition={{ duration: 0.5, delay: 0.8 }}
       className="relative mt-6 flex h-screen snap-start flex-col overflow-x-hidden px-6 after:mb-6 after:h-1 after:w-full after:rounded-full after:bg-orange md:my-12 md:px-12 md:after:mb-12 lg:px-16 xl:justify-evenly"
     >
       <div className="mt-6 flex h-full w-full flex-col items-end gap-6 text-end md:mt-12">
@@ -48,7 +48,7 @@ const Education: React.FC<EducationProps> = ({ educations }) => {
             initial="hidden"
             whileInView="visible"
             variants={fadeAnimation}
-            transition={{ duration: 0.5, delay: 1 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
             viewport={{ once: true }}
             className="absolute left-0 top-0 -z-10 w-1/2 text-orange md:left-0"
           >
