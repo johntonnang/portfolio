@@ -54,6 +54,7 @@ const Menu: React.FC<MenuProps> = ({
       className="flex items-center justify-start"
     >
       <button
+        aria-label="Navigation toggle"
         onClick={toggleMenu}
         className="text-white fixed bottom-6 left-1/2 z-[60] h-[50px] w-[50px] -translate-x-1/2 transform rounded-full border-2 border-background-light focus:outline-none"
       >
@@ -117,10 +118,7 @@ const Menu: React.FC<MenuProps> = ({
             </h2>
             <ul className="flex w-full flex-col gap-1 md:gap-2">
               {Object.entries(socialLinks).map(([platform, url], id, array) => (
-                <li
-                  key={email}
-                  className="relative flex h-8 w-full justify-end"
-                >
+                <li key={id} className="relative flex h-8 w-full justify-end">
                   <Link
                     className="link-small text-decoration-none absolute text-lg font-semibold capitalize text-light md:text-2xl"
                     href={url}
