@@ -38,7 +38,7 @@ const Hero: React.FC<HeroProps> = ({ data }) => {
                 variants={fadeInText}
                 transition={{
                   duration: 0.4,
-                  delay: 1 + i * 0.1,
+                  delay: 1.2 + i * 0.1,
                 }}
               >
                 {word}
@@ -50,7 +50,7 @@ const Hero: React.FC<HeroProps> = ({ data }) => {
               animate="visible"
               exit="exit"
               variants={fadeInText}
-              transition={{ delay: 2.5 }}
+              transition={{ delay: 2.8 }}
               className="dot"
             />
           </motion.h1>
@@ -64,7 +64,7 @@ const Hero: React.FC<HeroProps> = ({ data }) => {
                 variants={fadeInText}
                 transition={{
                   duration: 0.4,
-                  delay: 1.5 + i * 0.1,
+                  delay: 1.7 + i * 0.1,
                 }}
               >
                 {word}
@@ -76,7 +76,7 @@ const Hero: React.FC<HeroProps> = ({ data }) => {
               animate="visible"
               exit="exit"
               variants={fadeInText}
-              transition={{ delay: 2.5 }}
+              transition={{ delay: 2.8 }}
               className="dot"
             />
           </motion.h2>
@@ -85,7 +85,7 @@ const Hero: React.FC<HeroProps> = ({ data }) => {
           initial="hidden"
           whileInView="visible"
           variants={fadeAnimation}
-          transition={{ duration: 0.5, delay: 2.5 }}
+          transition={{ duration: 0.5, delay: 2.8 }}
           viewport={{ once: true }}
           className="flex w-full justify-end xl:justify-center"
         >
