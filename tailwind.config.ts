@@ -14,6 +14,14 @@ const config: Config = {
       orange: '#ed6829',
       'orange-dark': '#922701',
     },
+    extend: {
+      width: {
+        screen: '100dvw',
+      },
+      height: {
+        screen: '100dvh',
+      },
+    },
   },
   plugins: [],
 };
