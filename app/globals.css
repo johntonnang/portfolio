@@ -16,62 +16,48 @@ main {
   @apply h-screen w-screen overflow-hidden flex justify-center items-center
 }
 
-/* main {
-  @apply max-w-[1440px]
-} */
-
 section {
   @apply max-w-[1440px]
 }
 
 @layer utilities {
-
-  .link::after {
+  .link::after,
+  .link-medium::after,
+  .link-small::after,
+  .link-small-dark::after {
     content: '';
-    height: 9px;
+    height: var(--link-height, 9px);
     width: 0;
     position: absolute;
-    bottom: -6px;
-    background-color: #f3f3f3;
+    bottom: calc(-1 * var(--link-height) / 1.5);
+    background-color: var(--link-color, #f3f3f3);
     left: 0;
     transition: width 0.3s ease;
     border-radius: 999px;
   }
 
-  .link:hover::after {
+  .link:hover::after,
+  .link-medium:hover::after,
+  .link-small:hover::after,
+  .link-small-dark:hover::after {
     width: 100%;
   }
 
-  .link-medium::after {
-    content: '';
-    height: 6px;
-    width: 0;
-    position: absolute;
-    bottom: -4px;
-    background-color: #f3f3f3;
-    left: 0;
-    transition: width 0.3s ease;
-    border-radius: 999px;
+  .link {
+    --link-height: 9px;
   }
 
-  .link-medium:hover::after {
-    width: 100%;
+  .link-medium {
+    --link-height: 6px;
   }
 
-  .link-small::after {
-    content: '';
-    height: 3px;
-    width: 0;
-    position: absolute;
-    bottom: -2px;
-    background-color: #f3f3f3;
-    left: 0;
-    transition: width 0.3s ease;
-    border-radius: 999px;
+  .link-small {
+    --link-height: 3px;
   }
 
-  .link-small:hover::after {
-    width: 100%;
+  .link-small-dark {
+    --link-height: 2px;
+    --link-color: #000;
   }
 }
 
@@ -87,5 +73,10 @@ section {
 
 .dot::after {
   content: '.';
+  color: #ed6829;
+}
+
+.exclamation-mark::after {
+  content: '!';
   color: #ed6829;
 }

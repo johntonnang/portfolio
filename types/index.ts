@@ -44,7 +44,7 @@ export type ProfileType = {
 
 export type AboutType = {
   _id: string;
-  fullName: string;
+  headline: string;
   profileImage: {
     alt: string;
     image: string;

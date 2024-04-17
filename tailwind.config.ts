@@ -10,7 +10,6 @@ const config: Config = {
     colors: {
       'background-light': '#fcf8f4',
       light: '#f3f3f3',
-      dark: '#333',
       orange: '#ed6829',
       'orange-dark': '#922701',
     },

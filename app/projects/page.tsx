@@ -27,7 +27,7 @@ const ProjectsPage = () => {
           variants={fadeAnimation}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.8 }}
-          className="flex h-screen flex-col gap-4 overflow-scroll p-6 pb-48 md:p-16 lg:gap-14"
+          className="flex h-screen flex-col gap-4 overflow-scroll p-6 pb-32 md:p-16 lg:gap-14"
         >
           <motion.h1
             initial="hidden"

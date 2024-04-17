@@ -51,7 +51,7 @@ const Menu: React.FC<MenuProps> = ({
       animate="visible"
       variants={fadeAnimation}
       transition={{ duration: 0.5 }}
-      className="flex items-center justify-start"
+      className="flex items-center justify-center"
     >
       <button
         aria-label="Navigation toggle"
@@ -68,7 +68,6 @@ const Menu: React.FC<MenuProps> = ({
               isOpen ? 'rotate-left' : ''
             }`}
           ></span>
-
           <span
             className={`h-[2px] w-5 rounded-full bg-light transition-all duration-300 ${
               isOpen ? 'opacity-0' : ''
@@ -90,9 +89,9 @@ const Menu: React.FC<MenuProps> = ({
       ></div>
       <motion.div
         style={{ transitionDelay: isOpen ? '300ms' : '0s' }}
-        className={`items-center justify-between ${
+        className={`fixed inset-0 mt-4 flex p-6 transition-all duration-1000 ease-in-out ${
           isOpen ? 'z-50' : '-z-10 opacity-0'
-        } fixed inset-0 mt-4 flex p-6 transition-all duration-1000 ease-in-out`}
+        }`}
       >
         <ul className="flex h-full w-full flex-col gap-2 md:gap-8">
           {navigationLinks?.map((link, index) => (

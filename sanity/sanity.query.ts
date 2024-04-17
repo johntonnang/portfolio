@@ -33,7 +33,7 @@ export async function getAbout() {
     return client.fetch(
       groq`*[_type == "about"] {
       _id,
-      fullName,
+      headline,
       profileImage {alt, "image": asset->url},
       email,
       number,

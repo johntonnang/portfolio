@@ -22,7 +22,7 @@ const Education: React.FC<EducationProps> = ({ educations }) => {
       variants={fadeAnimation}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: 0.8 }}
-      className="relative mt-6 flex h-screen snap-start flex-col overflow-x-hidden px-6 after:mb-6 after:h-1 after:w-full after:rounded-full after:bg-orange md:my-12 md:px-12 md:after:mb-12 lg:px-16 xl:justify-evenly"
+      className="relative mt-6 flex h-screen snap-start flex-col overflow-x-hidden px-6 after:mb-4 after:h-1 after:w-full after:rounded-full after:bg-orange md:my-12 md:px-12 md:after:mb-12 lg:px-16 xl:justify-evenly"
     >
       <div className="mt-6 flex h-full w-full flex-col items-end gap-6 text-end md:mt-12">
         <h2 className="dot mb-6 text-3xl font-bold leading-tight tracking-tight text-orange-dark md:text-4xl xl:text-6xl">
@@ -50,7 +50,7 @@ const Education: React.FC<EducationProps> = ({ educations }) => {
             variants={fadeAnimation}
             transition={{ duration: 0.5, delay: 0.8 }}
             viewport={{ once: true }}
-            className="absolute left-0 top-0 -z-10 w-1/2 text-orange md:left-0"
+            className="absolute left-0 top-0 -z-10 w-2/5 text-orange md:left-0"
           >
             <BlobEducation />
           </motion.div>

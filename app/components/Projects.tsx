@@ -34,7 +34,7 @@ const Projects: React.FC<ProjectsProps> = ({ data }) => {
         <Link target="_blank" href={`${data.url}`} passHref>
           {data.projectImage && (
             <Image
-              className={`transition-brightness absolute transform rounded-lg object-cover duration-700 ${isHovered ? 'brightness-[10%]' : 'brightness-[40%]'}`}
+              className={`transition-brightness absolute transform rounded-lg object-cover duration-700 ${isHovered ? 'brightness-[10%]' : 'brightness-[30%]'}`}
               src={data.projectImage[0].image}
               alt={data.projectImage[0].alt}
               fill={true}
