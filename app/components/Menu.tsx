@@ -154,7 +154,6 @@ const Menu: React.FC<MenuProps> = ({
               </li>
             </ul>
           </div>
-
           <div className="relative flex h-12 w-full justify-end">
             <Link
               href={`${resumeURL}`}
