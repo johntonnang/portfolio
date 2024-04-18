@@ -29,8 +29,6 @@ const About: React.FC<AboutProps> = ({ data }) => {
     error(...args);
   };
 
-  console.log(data.number);
-
   return (
     <>
       <motion.section

@@ -116,8 +116,11 @@ const Menu: React.FC<MenuProps> = ({
               Socials
             </h2>
             <ul className="flex w-full flex-col gap-1 md:gap-2">
-              {Object.entries(socialLinks).map(([platform, url], id, array) => (
-                <li key={id} className="relative flex h-8 w-full justify-end">
+              {Object.entries(socialLinks).map(([platform, url]) => (
+                <li
+                  key={platform}
+                  className="relative flex h-8 w-full justify-end"
+                >
                   <Link
                     className="link-small text-decoration-none absolute text-lg font-semibold capitalize text-light md:text-2xl"
                     href={url}
