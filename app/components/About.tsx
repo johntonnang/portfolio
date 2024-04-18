@@ -91,7 +91,7 @@ const About: React.FC<AboutProps> = ({ data }) => {
             whileInView="visible"
             variants={fadeAnimation}
             transition={{ duration: 0.5, delay: 2 }}
-            className="flex flex-col gap-4 md:mb-12"
+            className="mb-2 flex flex-col gap-4 md:mb-12"
           >
             <h2 className="dot w-full text-xl font-bold leading-tight tracking-tight text-orange-dark md:w-1/2 md:text-3xl xl:text-4xl">
               {data.shortBio}
