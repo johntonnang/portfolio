@@ -5,7 +5,6 @@ import type { MenuType } from '@/types';
 import { useMenu } from '../context/MenuContext';
 import { motion } from 'framer-motion';
 import { fadeAnimation } from '../lib/animations';
-
 import { useRouter } from 'next/navigation';
 
 type MenuProps = {
